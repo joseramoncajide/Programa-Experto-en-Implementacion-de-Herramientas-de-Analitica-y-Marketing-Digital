@@ -1,5 +1,6 @@
 # Programa-Experto-en-Implementacion-de-Herramientas-de-Analitica-y-Marketing-Digital
 
+Recursos para las prácticas de implementación con Google Tag Manager.
 
 ### Medición de errores en campos de formularios
 
@@ -17,14 +18,14 @@ $(document).on('DOMNodeInserted', '.error', function(e) {
 ### Medición de formularios Ajax
 
 
-** Simular envío del formulario **
+**Simular envío del formulario**
 
 ```
 toastr.success('Thank you for signing up.');
 toastr.error('An error occured. Please try again later.');
 ```
 
-** Detección de cambios en el DOM **
+**Detección de cambios en el DOM**
 
 ```
 $(document).on('DOMNodeInserted', '.toast-success', function(e) {
@@ -32,7 +33,7 @@ $(document).on('DOMNodeInserted', '.toast-success', function(e) {
 });
 ```
 
-** Obtención el campo del formulario **
+**Obtención el campo del formulario**
 
 ```
 element = e.target;
@@ -41,13 +42,13 @@ field = element.getAttribute('for');
 
 ### Detectar eventos de scroll
 
-** Obtención del alto de la página **
+**Obtención del alto de la página**
 
 ```
 $(document).height();
 ```
 
-** Obtención de la posición vertical de la página **
+**Obtención de la posición vertical de la página**
 
 ```
 $(window).scrollTop()
@@ -69,7 +70,7 @@ $(document).ready(function(){
 });
 ```
 
-** Cancelación del listener **
+**Cancelación del listener**
 
 ```
 $(this).unbind("scroll");
