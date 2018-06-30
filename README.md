@@ -13,7 +13,12 @@ $(document).on('DOMNodeInserted', '.error', function(e) {
 
 });
 ```
+**Obtención el campo del formulario**
 
+```
+element = e.target;
+field = element.getAttribute('for');
+```
 
 ### Medición de formularios Ajax
 
@@ -33,12 +38,7 @@ $(document).on('DOMNodeInserted', '.toast-success', function(e) {
 });
 ```
 
-**Obtención el campo del formulario**
 
-```
-element = e.target;
-field = element.getAttribute('for');
-```
 
 ### Detectar eventos de scroll
 
